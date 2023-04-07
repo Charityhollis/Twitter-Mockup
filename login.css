@@ -15,8 +15,32 @@
 }
 
 *{
+    font-family: 'Inknut Antiqua', 'Hi Melody', Verdana, Tahoma, sans-serif;
     font-size: 14px;
-    color: ;
-    font-family: 'Inknut Antiqua', 'Hi Melody', Verdana, Tahoma, sans-serif ;
     font-weight: 400;
+    color: var(--main-text); 
 }
+    
+body{ 
+    background-color: var(--bg-main);
+}
+
+h1 {
+    text-align: center;
+    font-size: 64px;
+    color: var(--accent-);
+}
+
+form {
+    border: 3px solid #f1f1f1;
+  }
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 31.5px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #F0997D4A;
+  }
