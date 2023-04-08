@@ -25,17 +25,22 @@ body{
     background-color: var(--bg-main);
 }
 
-h1 {
+h1 , .accent {
     text-align: center;
-    font-size: 64px;
+    font-size: 45px;
     color: var(--accent-);
+    font-style: 'Hi Melody';
+}
+
+h4 {
+    text-align: center;
 }
 
 form {
-    border: 3px solid #f1f1f1;
+    border: 3px solid transparent;
   }
 
-  input[type=text], input[type=password] {
+  input[type="text"], input[type="password"] {
     width: 100%;
     padding: 12px 20px;
     margin: 31.5px 0px;
@@ -43,4 +48,35 @@ form {
     border: 1px solid #ccc;
     box-sizing: border-box;
     background-color: #F0997D4A;
+  }
+ 
+  button {
+    background-color: var(--accent-);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: var(--accent-2);
+  }
+
+  .placeholder {
+    color: var(--main-text);
+  }
+  
+  .change {
+    color: var(--bg-main);
+  }
+
+  @media screen and (max-width: 768px) and (max-width: 1441px) {
+    main: {
+        width: 390px;
+        height: 844px;
+        margin: 0;
+        padding: 0;
+    }
   }
