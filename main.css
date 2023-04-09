@@ -63,13 +63,20 @@ h1 {
 
 
 
-.content-top-right {
+.container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    /* position:fixed; */
+    flex-direction: column;
 }
+
+#url {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 @media screen and (max-width: 768px) and (max-width: 1441px) {
     body: {
