@@ -21,37 +21,58 @@
     color: var(--main-text); 
 }
 
-.image-grid { 
-    --gap: 16px;
-    --num-cols: 3;
-    --row-height: 300px;
 
-    padding: var(--gap);
 
-    display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap);
-}
 
 .image-grid > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 1440px;
+    height: 1024px;  
+     object-fit: cover;
 }
 
-form {
-    border: 3px solid;
-    background-color: #A75D5DFA;
-    width: 551px;
-    height: 640px;
+ .image-grid {
+    order: 1;
+    background-image: url("Assets/tide_trasher_x-MPuoF1Vz9pk-unsplash.jpg");
+     min-height: 380px;
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+    width: 100%;
+    height: 100%;
+} 
+
+ h1 {
+    font-family: 'Hi Melody', Verdana;
+    font-size: 80px;
+    text-align: center;
+    color: var(--accent-);
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+     margin: 192px 685px 752px 583px; 
+} 
+   
+.container, h1 {
+    max-width: 500px;  
+    max-height: 500px; 
+    padding: 17px;  
+    position: absolute;  
+    left: 28px;  
+    top: 50px;  
+    margin: 20px 50px;  
+    /* background-color: var(--bg-main); */
     
-  }
+}
+
+
+
+  
 
   input[type="text"], input[type="password"] {
+    margin: 17px 0px;
     width: 100%;
-    padding: 12px 20px;
-    margin: 31.5px 0px;
+    padding: 17px;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -67,6 +88,8 @@ form {
     cursor: pointer;
     width: 100%;
   }
+
+
   
   button:hover {
     background-color: var(--accent-2);
@@ -82,6 +105,14 @@ form {
 
 
 
-@media screen and (min-width: 1440px){ 
+
+
+
+
+@media screen and (min-width: 1440px) { 
+main {
+    width: 1110px;
+    height: 446px;
+}
 
 }
